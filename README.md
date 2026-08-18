@@ -1,7 +1,7 @@
 # COIT20246 Cyber Security and Networking Project
 
 - Group Number:
-- Student 1: name (ID)
+- Student 1: Hans Danford (ID s0021018)
 - Student 2: Graham Ranie (ID 12342088)
 - Campus: DST
 - Tutor: Mohammad Mohammad
