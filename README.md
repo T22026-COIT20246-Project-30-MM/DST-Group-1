@@ -3,8 +3,8 @@
 - Group Number:
 - Student 1: name (ID)
 - Student 2: Graham Ranie (ID 12342088)
-- Campus:
-- Tutor:
+- Campus: DST
+- Tutor: Mohammad Mohammad
 
 ## Project Report
 
