@@ -2,6 +2,7 @@
 
 ## Communication Plan
 
+The plan is to meet every Friday at 6pm.
 
 ## Schedule
 The plan of tasks for each group member for the remainder of the project is:
