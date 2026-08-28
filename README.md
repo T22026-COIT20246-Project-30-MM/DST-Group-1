@@ -22,8 +22,8 @@ Group and Planning
 - [x] Form your group
 - [x] Create GitHub Repository via GitHub Classroom
 - [x] Agree on communication plan: frequency, methods
-- [ ] Prepare schedule in plan.md
-- [ ] Ensure all members understand expectations for GitHub contributions
+- [x] Prepare schedule in plan.md
+- [x] Ensure all members understand expectations for GitHub contributions
 
 Network Setup
 - [ ] List assumptions
