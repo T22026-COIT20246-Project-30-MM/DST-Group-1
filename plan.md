@@ -1,12 +1,16 @@
 # Project Plan
 
+## Key Dates
+
+- **Project due:** Friday 2 October 2026, 11:45pm AEST (30% of unit grade)
+- **plan.md required in GitHub:** by end of Week 6 (23 Aug 2026)
+
 ## Communication Plan
 
 - **Frequency:** Weekly, every Friday evening.
-- **Time:**  ~6:00 pm AEST (Graham) / ~8:00 pm Fiji time (Hans)
+- **Time:** ~5:00–6:00 pm AEST (Graham) / ~7:00–8:00 pm Fiji
 - **Platform for calls:** Google Meet
 - **First sync:** Friday 28 August 2026
-
 
 ## Schedule
 The plan of tasks for each group member for the remainder of the project is:
