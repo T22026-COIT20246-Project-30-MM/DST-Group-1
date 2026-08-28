@@ -2,7 +2,11 @@
 
 ## Communication Plan
 
-The plan is to meet every Friday at 6pm.
+- **Frequency:** Weekly, every Friday evening.
+- **Time:**  ~6:00 pm AEST (Graham) / ~8:00 pm Fiji time (Hans)
+- **Platform for calls:** Google Meet
+- **First sync:** Friday 28 August 2026
+
 
 ## Schedule
 The plan of tasks for each group member for the remainder of the project is:
