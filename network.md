@@ -14,4 +14,5 @@ Write your answere here.
 
 ## Production Network Design
 
-Write your answer here.
+GR - The network design is a WIP - Pending feedback and discuss with Hans
+![NetworkDiagram Screenshot](./IMAGES/NetworkDiagram.png)
