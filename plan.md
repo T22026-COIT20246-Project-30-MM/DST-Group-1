@@ -26,18 +26,13 @@ The plan of tasks for each group member for the remainder of the project is:
 
 ## Assumptions
 
-*Draft — city to be finalised with Graham over email.*
-
-- **Business:** Small accounting firm — *agreed* (deals with sensitive client financial data, good fit for the risk assessment)
-- **Staff:** 5 total — *agreed*
-- **City:** *TBD — pick one:*
-  - Option A: Suva, Fiji
-  - Option B: Brisbane, Australia
-  - Option C: Rockhampton, Australia
-- **Staff roles (draft — not yet confirmed with Graham):**
+- **Business:** Small accounting firm  (deals with sensitive client financial data, good fit for the risk assessment)
+- **Staff:** 5 total
+- **City:** Rockhampton, Australia
+- **Staff roles:**
   1. Practice Manager (also handles admin)
   2. 2–3 Accountants/Tax Agents
   3. Bookkeeper
   4. IT Support (part-time)
-  *(adjust split to total 5)*
+
 - **Website content (draft — not yet confirmed):** services offered (tax prep, bookkeeping, business advisory), staff bios, contact form, client portal login for document exchange.
