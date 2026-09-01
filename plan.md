@@ -25,32 +25,34 @@ The plan of tasks for each group member for the remainder of the project is:
 
 ## Schedule - WIP
 
+## Schedule
+
 ```mermaid
 gantt
-    title COIT20246 Project Schedule — DST Group 1
+    title COIT20246 Project Schedule - DST Group 1
     dateFormat  YYYY-MM-DD
     axisFormat  %b %d
 
     section Planning
-    Review spec & take notes           :done, w5, 2026-08-10, 7d
+    Review spec and take notes         :done, w5, 2026-08-10, 7d
     Meet, compare notes, draft plan    :done, w6, 2026-08-17, 7d
     First group meeting                :milestone, m1, 2026-08-28, 0d
 
-    section Network Setup (4.1)
-    Network setup (OpenWRT) - Hans          :active, w7a, 2026-08-31, 7d
+    section Network Setup
+    Network setup OpenWRT - Hans            :active, w7a, 2026-08-31, 7d
     IP Addressing Requirements - Graham     :active, w7b, 2026-08-31, 7d
     Firewall Rules - Hans                   :w8a, after w7a, 7d
     Production Network Diagram - Graham     :w8b, after w7b, 7d
 
-    section Hardening & Traffic Analysis (4.2)
-    Harden OpenWRT + Capture/Analyse Traffic :w9, 2026-09-14, 7d
+    section Hardening and Traffic Analysis
+    Harden OpenWRT and analyse traffic      :w9, 2026-09-14, 7d
 
-    section Risk Assessment (4.3)
-    Risk Assessment (TVAMatrix) + Controls   :w10, 2026-09-21, 7d
+    section Risk Assessment
+    Risk Assessment and Controls            :w10, 2026-09-21, 7d
 
-    section Report & Submission
-    Reflection, report, demo, package repo   :crit, w11, 2026-09-28, 5d
-    Project due — 2 Oct, 11:45pm AEST        :milestone, due, 2026-10-02, 0d
+    section Report and Submission
+    Reflection, report, demo, package repo  :crit, w11, 2026-09-28, 5d
+    Project due 2 Oct, 11.45pm AEST         :milestone, due, 2026-10-02, 0d
 ```
 
 
