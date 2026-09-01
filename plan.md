@@ -25,8 +25,6 @@ The plan of tasks for each group member for the remainder of the project is:
 
 ## Schedule - WIP
 
-## Schedule
-
 ```mermaid
 gantt
     title COIT20246 Project Schedule - DST Group 1
