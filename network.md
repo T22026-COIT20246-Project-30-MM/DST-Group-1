@@ -15,7 +15,6 @@
 
 ## OpenWRT and VirtualBox Setup
 
-Write your answer here.
 The OpenWRT VM has two interfaces. VirtualBox Adapter 2 is attached to NAT (MAC 08:00:27:6F:F5:F5, matching eth1), which receives 10.0.3.15/24 from VirtualBox's internal DHCP. This simulates OpenWRT's WAN/internet-facing connection and is not directly reachable from the Windows host. VirtualBox Adapter 1 is attached to a Host-only Adapter (MAC 08:00:27:E3:5F:8F, matching eth0), and eth0 is bridged into br-mng, which holds the static address 192.168.56.2/24. The Windows host's own Host-only network adapter sits on the same subnet at 192.168.56.1. Because both the host and OpenWRT's br-mng interface are on 192.168.56.0/24, the host can reach OpenWRT directly (confirmed via ARP resolution and successful ping) without needing NAT or routing — this is how the browser, SSH, and Wireshark capture traffic all reach the VM. 
 
 Ensure you embed images of the network design, and link to the drawio files. The drawio files must be in your repository. 
