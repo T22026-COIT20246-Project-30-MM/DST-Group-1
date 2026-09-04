@@ -55,15 +55,3 @@ gantt
 ```
 
 
-## Assumptions
-
-- **Business:** Small accounting firm  (deals with sensitive client financial data, good fit for the risk assessment)
-- **Staff:** 5 total
-- **City:** Rockhampton, Australia
-- **Staff roles:**
-  1. Practice Manager (also handles admin)
-  2. 2–3 Accountants/Tax Agents
-  3. Bookkeeper
-  4. IT Support (part-time)
-
-- **Website content (draft — not yet confirmed):** services offered (tax prep, bookkeeping, business advisory), staff bios, contact form, client portal login for document exchange.
