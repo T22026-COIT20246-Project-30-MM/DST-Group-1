@@ -28,7 +28,7 @@ The plan of tasks for each group member for the remainder of the project is:
 
 ```mermaid
 %%{init: {'theme':'base', 'themeVariables': {
-  "fontSize": "14px"
+  'fontSize': '14px',
   'primaryColor': '#4C8BF5',
   'primaryTextColor': '#fff',
   'primaryBorderColor': '#2563eb',
