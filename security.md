@@ -11,7 +11,7 @@ GR- Risk Assessment WIP
 | 2 | 🟢 LOW | 🟡 MEDIUM | 🔴 HIGH |
 | 3 | 🟡 MEDIUM | 🔴 HIGH | 🔴 HIGH |
 
-
+### Risk Assessment
 
 | Asset  | Threat | Vulnerability  | Likelihood | Impact | Risk Level  | Mitigation |
 | ------------- | ------------- |------------- |------------- |------------- |------------- |------------- |
