@@ -12,9 +12,9 @@
 
 | Likelihood \ Impact | 1 | 2 | 3 |
 |---|---|---|---|
-| 1 | LOW | LOW | MEDIUM |
-| 2 | LOW | MEDIUM | HIGH |
-| 3 | MEDIUM | HIGH | HIGH |
+| 1 | 🟢 LOW | 🟢 LOW | 🟡 MEDIUM |
+| 2 | 🟢 LOW | 🟡 MEDIUM | 🔴 HIGH |
+| 3 | 🟡 MEDIUM | 🔴 HIGH | 🔴 HIGH |
 
 
 ## Security Controls
