@@ -10,13 +10,11 @@
 | Customer data | Unauthorised Access |WWeak credentials or poor access controls  |2  |3 |High  |TBC |
 | Office | Unauthorised Access |Poor security |1  |3 |Medium  |TBC |
 
-| Impact |
-| ------------- |----------- |------------- |
-| 1 | 2 | 3 |
-| ------------- | ------------- |------------- |
-| Low | Low |Medium |
-| Low | Medium |High |
-| Medium | High |High |
+| Likelihood \ Impact | 1 | 2 | 3 |
+|---|---|---|---|
+| 1 | LOW | LOW | MEDIUM |
+| 2 | LOW | MEDIUM | HIGH |
+| 3 | MEDIUM | HIGH | HIGH |
 
 
 ## Security Controls
