@@ -4,6 +4,14 @@
 [View risk assessment spreadsheet](./risk-assessment.xlsx)
 
 GR- Risk Assessment WIP
+### Risk Matrix
+| Likelihood \ Impact | 1 | 2 | 3 |
+|---|---|---|---|
+| 1 | 🟢 LOW | 🟢 LOW | 🟡 MEDIUM |
+| 2 | 🟢 LOW | 🟡 MEDIUM | 🔴 HIGH |
+| 3 | 🟡 MEDIUM | 🔴 HIGH | 🔴 HIGH |
+
+
 
 | Asset  | Threat | Vulnerability  | Likelihood | Impact | Risk Level  | Mitigation |
 | ------------- | ------------- |------------- |------------- |------------- |------------- |------------- |
@@ -11,12 +19,6 @@ GR- Risk Assessment WIP
 | Staff PCs | Ransomware / Phishing attack |Malicious attachment/ software  |2  |3 |High  |TBC |
 | Customer data | Unauthorised Access |WWeak credentials or poor access controls  |2  |3 |High  |TBC |
 | Office | Unauthorised Access |Poor security |1  |3 |Medium  |TBC |
-
-| Likelihood \ Impact | 1 | 2 | 3 |
-|---|---|---|---|
-| 1 | 🟢 LOW | 🟢 LOW | 🟡 MEDIUM |
-| 2 | 🟢 LOW | 🟡 MEDIUM | 🔴 HIGH |
-| 3 | 🟡 MEDIUM | 🔴 HIGH | 🔴 HIGH |
 
 
 ## Security Controls
