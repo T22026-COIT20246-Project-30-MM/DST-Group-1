@@ -3,9 +3,9 @@
 ## Risk Assessment
 [View risk assessment spreadsheet](./risk-assessment.xlsx)
 
-| First Header  | Second Header | third Header  | fourth Header | 5th Header | 6th Header  | 7th Header |
+| Asset  | Threat | Vulnerability  | Likelihood | Impact | Risk Level  | Mitigation |
 | ------------- | ------------- |------------- |------------- |------------- |------------- |------------- |
-| Content Cell  | Content Cell  |Content Cell  |Content Cell  |Content Cell  |Content Cell  |Content Cell  |
+| Router/Firewall | Content Cell  |Content Cell  |Content Cell  |Content Cell  |Content Cell  |Content Cell  |
 
 
 ## Security Controls
