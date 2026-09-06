@@ -26,10 +26,10 @@ Group and Planning
 - [x] Ensure all members understand expectations for GitHub contributions
 
 Network Setup
-- [ ] List assumptions
-- [ ] Document OpenWRT/VirtualBox network
-- [ ] Draw OpenWRT/VirtualBox network diagram
-- [ ] Setup test web server on OpenWRT
+- [x] List assumptions
+- [x] Document OpenWRT/VirtualBox network
+- [x] Draw OpenWRT/VirtualBox network diagram
+- [x] Setup test web server on OpenWRT
 - [ ] Configure firewall rules
 - [ ] Draw production network diagram, assigning IPs
 

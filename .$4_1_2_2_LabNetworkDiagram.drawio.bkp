@@ -1,0 +1,22 @@
+<mxfile host="app.diagrams.net">
+  <diagram name="Page-1" id="n5tAU9xVGUzWU3tmvaY5">
+    <mxGraphModel dx="710" dy="388" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="SbriW4-C1RPILe951nlN-3" edge="1" parent="1" source="SbriW4-C1RPILe951nlN-1" style="edgeStyle=none;shape=connector;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;strokeColor=default;align=center;verticalAlign=middle;fontFamily=Helvetica;fontSize=11;fontColor=default;labelBackgroundColor=default;endArrow=none;endFill=0;" target="SbriW4-C1RPILe951nlN-2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="SbriW4-C1RPILe951nlN-1" parent="1" style="whiteSpace=wrap;html=1;aspect=fixed;" value="Windows Host&lt;br&gt;IPadd:192.168.56.1&lt;div&gt;MAC:0a:00:27:00:00:02&lt;/div&gt;" vertex="1">
+          <mxGeometry height="110" width="110" x="180" y="200" as="geometry" />
+        </mxCell>
+        <mxCell id="SbriW4-C1RPILe951nlN-2" parent="1" style="whiteSpace=wrap;html=1;aspect=fixed;" value="OpenWRT VM&lt;div&gt;IPadd:192.168.56.2&lt;/div&gt;&lt;div&gt;MAC:08:00:27:e3:5f:8f&lt;/div&gt;" vertex="1">
+          <mxGeometry height="110" width="110" x="580" y="200" as="geometry" />
+        </mxCell>
+        <mxCell id="SbriW4-C1RPILe951nlN-4" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="Network Diagram&lt;div&gt;Hans Danford&lt;/div&gt;" vertex="1">
+          <mxGeometry height="60" width="120" x="180" y="350" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
