@@ -24,7 +24,7 @@ The OpenWRT VM has two interfaces. VirtualBox Adapter 2 is attached to NAT (MAC 
 Here are the IP Address Allocations
 | Device | Interface | IP Address | Adapter Type |
 |---|---|---|---|
-| Windows host | (host nic) | 192.168.56.1/24 | Host-only adaper |
+| Windows host | (host nic) | 192.168.56.1/24 | Host-only adapter |
 | OpenWRT | eth1 (Virtual Adapter 2) | 10.0.3.15/24 | NAT |
 | OpenWRT | eth0->br-mng (Virtual Adapter 1) | 192.168.56.2/24 | Host-only adapter |
 
