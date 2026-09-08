@@ -27,7 +27,7 @@ The plan of tasks for each group member for the remainder of the project is:
 
 
 ```mermaid
-%%{init: {'theme':'base', 'themeVariables': {
+%%{init: {'theme': 'base', 'themeVariables': {
   'fontSize': '20px',
   'primaryColor': '#4C8BF5',
   'primaryTextColor': '#fff',
@@ -35,6 +35,9 @@ The plan of tasks for each group member for the remainder of the project is:
   'lineColor': '#94a3b8',
   'secondaryColor': '#22c55e',
   'tertiaryColor': '#f59e0b',
+  'sectionBkgColor': '#dbeafe',
+  'sectionBkgColor2': '#f1f5f9',
+  'altSectionBkgColor': '#ffffff',
   'doneTaskBkgColor': '#64748b',
   'doneTaskBorderColor': '#475569',
   'activeTaskBkgColor': '#4C8BF5',
@@ -42,7 +45,7 @@ The plan of tasks for each group member for the remainder of the project is:
   'critBkgColor': '#ef4444',
   'critBorderColor': '#b91c1c',
   'taskTextColor': '#fff',
-  'taskTextOutsideColor': '#e2e8f0'
+  'taskTextOutsideColor': '#1e293b'
 }}}%%
 gantt
     title COIT20246 Project Schedule - DST Group 1
