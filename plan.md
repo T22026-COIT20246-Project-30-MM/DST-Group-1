@@ -55,6 +55,7 @@ gantt
     First group meeting                :milestone, m1, 2026-08-28, 0d
 
     section Network Setup
+    Second group meeting                :milestone, m2, 2026-09-04, 0d
     Network setup OpenWRT - Hans            :done, w7a, 2026-08-31, 7d
     IP Addressing Requirements - Graham     :done, w7b, 2026-08-31, 7d
     Firewall Rules - Hans                   :active, w8a, after w7a, 7d
