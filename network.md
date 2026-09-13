@@ -91,9 +91,14 @@ To unblock the HTTP traffic the following command was issued `uci set firewall.@
 
 ### 2) SSH on port 2222
 
-OpenWRT uses Dropbear as its SSH server. Using the following command `uci show dropbear` we can see the SSH configuration on the router. Below is the output of that commnad.
+#### Below is a snapshot of successful ssh on port 22
+
+![SSH Port 22](./images/4_1_3_2_SSH-Success.png)
+
+OpenWRT uses Dropbear as its SSH server. Using the following command `uci show dropbear` we can see the SSH configuration on the router. Below is the output of that command.
 
 ```
+root@OpenWrt:~# uci show dropbear
 dropbear.@dropbear[0]=dropbear
 dropbear.@dropbear[0].PasswordAuth='on'
 dropbear.@dropbear[0].RootPasswordAuth='on'
@@ -102,12 +107,36 @@ dropbear.@dropbear[0].Port='22'
 Using the `uci set dropbear.@dropbear[0].Port='2222'` command we can see that the ssh port has been configured to `2222`. After a restart of the service with `uci commit dropbear && /etc/init.d/dropbear restart`, we can see (below) that the configuration has been updated with the `show` command used previously.
 
 ```
+root@OpenWrt:~# uci set dropbear.@dropbear[0].Port='2222'
+root@OpenWrt:~# uci commit dropbear && /etc/init.d/dropbear restart
+root@OpenWrt:~# uci show dropbear
 dropbear.@dropbear[0]=dropbear
 dropbear.@dropbear[0].PasswordAuth='on'
 dropbear.@dropbear[0].RootPasswordAuth='on'
 dropbear.@dropbear[0].Port='2222'
 ```
+Apart from changing the port from 22 to 2222, a firewall rule called `Allow-SSH-2222` was also configured and deployed to explicitly allow traffic to reach port 2222. Changing the ssh port to 2222 defeats scanners hardcoded to hit port 22 and configuring the firewall also ensures that TCP traffic will continue to be allowed on port 2222 if existing TCP firewall rules change. It's also important to note that although I have changed the port 2222 on my existing SSH session, the change in configuration only affects new SSH connections. Below is a screenshot of unsuccessful ssh on port 22 and then successful ssh on port 2222.
 
+Here's the firewall configuration:
+```
+root@OpenWrt:~# uci add firewall rule
+cfg1092bd
+root@OpenWrt:~# uci set firewall.@rule[-1].name='Allow-SSH-2222'
+root@OpenWrt:~# uci set firewall.@rule[-1].src='lan'
+root@OpenWrt:~# uci set firewall.@rule[-1].proto='tcp'
+root@OpenWrt:~# uci set firewall.@rule[-1].dest_port='2222'
+root@OpenWrt:~# uci set firewall.@rule[-1].target='ACCEPT'
+root@OpenWrt:~# uci commit firewall && /etc/init.d/firewall restart
+root@OpenWrt:~# uci show firewall
+firewall.@rule[11]=rule
+firewall.@rule[11].name='Allow-SSH-2222'
+firewall.@rule[11].proto='tcp'
+firewall.@rule[11].dest_port='2222'
+firewall.@rule[11].target='ACCEPT'
+firewall.@rule[11].src='lan'
+```
+
+![SSH Port 22 fail and Port 2222 success](./images/4_1_3_2_SSH-Port2222.png)
 
 ## Production Network Design
 
