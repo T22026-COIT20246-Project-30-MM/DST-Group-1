@@ -30,7 +30,84 @@ Here are the IP Address Allocations
 
 ## Firewall Configuration
 
-Write your answere here.
+### 1) Used the following commands to add firewall rule to Block HTTP traffic.
+
+### Below is the screenshot of the web page before the firewall updates
+
+![Before Firewall -  web page](./images/4_1_3_1_BeforeHTTP-Block.png)
+
+```
+root@OpenWrt:~# uci add firewall rule
+cfg0f92bd
+root@OpenWrt:~# uci set firewall.@rule[-1].name='Block-HTTP'
+root@OpenWrt:~# uci set firewall.@rule[-1].src='lan'
+root@OpenWrt:~# uci set firewall.@rule[-1].proto='tcp'
+root@OpenWrt:~# uci set firewall.@rule[-1].dest_port='80'
+root@OpenWrt:~# uci set firewall.@rule[-1].target='REJECT'
+root@OpenWrt:~# uci commit firewall && /etc/init.d/firewall restart
+```
+The name of the rule is `Block-HTTP`. It will reject traffic on port 80 for "lan" network. Once the rule is set, the firewall needs to be restarted for the rule to take effect. Note: Initially it was assumed that the "lan" source was the network used for http traffic. This was not the case and a reload of the web page did not time out. A review of `uci show network` (output below) confirmed that the "mng" network carried the web page. Adding "mng" network to previously created firewall rule using `uci add_list firewall.@zone[0].network='mng'` followed by a restart of the firewall using `uci commit firewall && /etc/init.d/firewall restart`, finally resulted in the blocking of http traffic. Being able to block or allow HTTP traffic on demand means the business can take the website offline during maintenance or suspected compromise without shutting down the whole router.
+
+```
+root@OpenWrt:~# uci show network
+network.loopback=interface
+network.loopback.device='lo'
+network.loopback.proto='static'
+network.loopback.ipaddr='127.0.0.1'
+network.loopback.netmask='255.0.0.0'
+network.globals=globals
+network.globals.ula_prefix='fd88:3563:c944::/48'
+network.@device[0]=device
+network.@device[0].name='br-lan'
+network.@device[0].type='bridge'
+network.@device[0].ports='eth0'
+network.wan=interface
+network.wan.device='eth1'
+network.wan.proto='dhcp'
+network.wan.ifname='eth1'
+network.mng=interface
+network.mng.proto='static'
+network.mng.netmask='255.255.255.0'
+network.mng.ipaddr='192.168.56.2'
+network.mng.device='br-mng'
+network.lan=interface
+network.lan.proto='dhcp'
+network.lan.device='eth2'
+network.@device[1]=device
+network.@device[1].name='br-mng'
+network.@device[1].type='bridge'
+network.@device[1].ports='eth0'
+```
+
+### Below is the screenshot of successfully blocked web page
+
+![Blocked web page](./images/4_1_3_1_HTTP-Blocked.png)
+
+### Unblock HTTP
+To unblock the HTTP traffic the following command was issued `uci set firewall.@rule[-1].target='ACCEPT'` followed by a restart of the firewall. Resulting in HTTP traffic being allowed and web page being successfully displayed below.
+
+![Blocked web page](./images/4_1_3_1_HTTP-Unblocked.png)
+
+
+### 2) SSH on port 2222
+
+OpenWRT uses Dropbear as its SSH server. Using the following command `uci show dropbear` we can see the SSH configuration on the router. Below is the output of that commnad.
+
+```
+dropbear.@dropbear[0]=dropbear
+dropbear.@dropbear[0].PasswordAuth='on'
+dropbear.@dropbear[0].RootPasswordAuth='on'
+dropbear.@dropbear[0].Port='22'
+```
+Using the `uci set dropbear.@dropbear[0].Port='2222'` command we can see that the ssh port has been configured to `2222`. After a restart of the service with `uci commit dropbear && /etc/init.d/dropbear restart`, we can see (below) that the configuration has been updated with the `show` command used previously.
+
+```
+dropbear.@dropbear[0]=dropbear
+dropbear.@dropbear[0].PasswordAuth='on'
+dropbear.@dropbear[0].RootPasswordAuth='on'
+dropbear.@dropbear[0].Port='2222'
+```
+
 
 ## Production Network Design
 
