@@ -1,7 +1,7 @@
 # Risk Assessment and Security Controls
 
 ## Risk Assessment
-[View risk assessment spreadsheet](./risk assessment.xlsx)
+[View risk assessment spreadsheet](./Files/risk assessment.xlsx)
 
 
 
