@@ -41,7 +41,7 @@ Security Hardening and Traffic Analysis
 - [ ] Capture and analyse SSH traffic
 
 Risk Assessment and Controls
-- [ ] Conduct mini risk assessment
+- [x] Conduct mini risk assessment
 - [ ] Recommend security controls
 - [ ] Explain controls
 
