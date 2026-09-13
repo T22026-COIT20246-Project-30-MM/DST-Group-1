@@ -138,6 +138,77 @@ firewall.@rule[11].src='lan'
 
 ![SSH Port 22 fail and Port 2222 success](./images/4_1_3_2_SSH-Port2222.png)
 
+### 3) ICMP - Block/Allow
+
+Below is a screenshot of a successful ping before the restriction of ICMP traffic with a firewall rule.
+
+![Ping success](./images/4_1_3_3_PingBefore.png)
+
+The following firewall rule `Block-ICMP` will reject ICMP traffic on `lan`. Here is the rule configuration. As always the firewall service has to be restarted for the updated firewall rules to take effect.
+
+```
+root@OpenWrt:~# uci add firewall rule
+cfg1192bd
+root@OpenWrt:~# uci set firewall.@rule[-1].name='Block-ICMP'
+root@OpenWrt:~# uci set firewall.@rule[-1].src='lan'
+root@OpenWrt:~# uci set firewall.@rule[-1].proto='icmp'
+root@OpenWrt:~# uci set firewall.@rule[-1].target='REJECT'
+root@OpenWrt:~# uci commit firewall && /etc/init.d/firewall restart
+```
+
+Below is a snippet of the firewall rule configuration using `uci show firewall`
+
+```
+firewall.@rule[12]=rule
+firewall.@rule[12].name='Block-ICMP'
+firewall.@rule[12].src='lan'
+firewall.@rule[12].proto='icmp'
+firewall.@rule[12].target='REJECT'
+
+```
+
+A ping sent after the firewall configuration results in the following output:
+
+```
+PS C:\Users\Hans.Danford.TFL> ping 192.168.56.2
+
+Pinging 192.168.56.2 with 32 bytes of data:
+Reply from 192.168.56.2: Destination port unreachable.
+Reply from 192.168.56.2: Destination port unreachable.
+Reply from 192.168.56.2: Destination port unreachable.
+Reply from 192.168.56.2: Destination port unreachable.
+
+Ping statistics for 192.168.56.2:
+    Packets: Sent = 4, Received = 4, Lost = 0 (0% loss),
+PS C:\Users\Hans.Danford.TFL>
+```
+
+Following a successfully test of ICMP restriction, the following commands were executed to change the firewall `rule[12]` REJECT to ACCEPT to allow ICMP traffic to flow through. Below that is the output of the `show` command confirming the rule change
+
+```
+root@OpenWrt:~# uci set firewall.@rule[-1].target='ACCEPT'
+root@OpenWrt:~# uci commit firewall && /etc/init.d/firewall restart
+
+firewall.@rule[12]=rule
+firewall.@rule[12].name='Block-ICMP'
+firewall.@rule[12].src='lan'
+firewall.@rule[12].proto='icmp'
+firewall.@rule[12].target='ACCEPT'
+```
+
+Below is a screenshot of ping after the restriction of ICMP traffic with a firewall rule and then after the update of the firewall rule. The ping's follow the order of rule `target` from `REJECT` to `ACCEPT` and finally to `DROP`. If you notice in the screenshot, ping attempts while the rule was set to `REJECT` sent a response and no packets were lost. Although the response was `Destination port unreachable.` the response i.e loss of none of the packets could suggest that the host is `alive`. Moving forward, any ICMP restrictions will be set to `DROP` so that any ping attempts by attackers cannot yield active host status, shielding the OpenWRT router network from further exploitation. Below is a snapshot of the change from `ACCEPT` to `DROP` and back to `ACCEPT`.
+
+```
+root@OpenWrt:~#  uci set firewall.@rule[-1].target='DROP'
+root@OpenWrt:~# uci commit firewall && /etc/init.d/firewall restart
+root@OpenWrt:~# uci set firewall.@rule[-1].target='ACCEPT'
+root@OpenWrt:~# uci commit firewall && /etc/init.d/firewall restart
+```
+
+![Ping success](./images/4_1_3_3_PingAfter.png)
+
+
+
 ## Production Network Design
 
 GR - The network design is a WIP - Pending feedback and discuss with Hans
