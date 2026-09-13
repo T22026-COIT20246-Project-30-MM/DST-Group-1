@@ -41,7 +41,7 @@ Security Hardening and Traffic Analysis
 - [ ] Capture and analyse SSH traffic
 
 Risk Assessment and Controls
-- [ ] Conduct mini risk assessment
+- [x] Conduct mini risk assessment
 - [ ] Recommend security controls
 - [ ] Explain controls
 
@@ -54,7 +54,7 @@ Report and Files
 - [ ] Report written on GitHub in the template .md files
 - [ ] Screenshots included in [images/](./images/) directory and linked to from report
 - [ ] Packet captures included in [captures/](./captures/) directory and linked to from report
-- [ ] Risk assessment spreadsheet included as [risk-assessment.xlsx](./risk-assessment.xlsx)
+- [ ] Risk assessment spreadsheet included as [Risk assessment spreadsheet](./risk-assessment-template-project-final.xlsx)
 - [ ] Video created showing required demonstrations
 
 Submission

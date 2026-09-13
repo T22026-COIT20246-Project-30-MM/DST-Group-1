@@ -55,10 +55,11 @@ gantt
     First group meeting                :milestone, m1, 2026-08-28, 0d
 
     section Network Setup
-    Network setup OpenWRT - Hans            :active, w7a, 2026-08-31, 7d
-    IP Addressing Requirements - Graham     :active, w7b, 2026-08-31, 7d
-    Firewall Rules - Hans                   :w8a, after w7a, 7d
-    Production Network Diagram - Graham     :w8b, after w7b, 7d
+    Second group meeting                :milestone, m2, 2026-09-04, 0d
+    Network setup OpenWRT - Hans            :done, w7a, 2026-08-31, 7d
+    IP Addressing Requirements - Graham     :done, w7b, 2026-08-31, 7d
+    Firewall Rules - Hans                   :active, w8a, after w7a, 7d
+    Production Network Diagram - Graham     :active, w8b, after w7b, 7d
 
     section Hardening and Traffic Analysis
     Harden OpenWRT and analyse traffic      :w9, 2026-09-14, 7d
