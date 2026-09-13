@@ -86,7 +86,7 @@ network.@device[1].ports='eth0'
 ### Unblock HTTP
 To unblock the HTTP traffic the following command was issued `uci set firewall.@rule[-1].target='ACCEPT'` followed by a restart of the firewall. Resulting in HTTP traffic being allowed and web page being successfully displayed below.
 
-![Blocked web page](./images/4_1_3_1_HTTP-Unblocked.png)
+![Unblocked web page](./images/4_1_3_1_HTTP-Unblocked.png)
 
 
 ### 2) SSH on port 2222
@@ -207,7 +207,25 @@ root@OpenWrt:~# uci commit firewall && /etc/init.d/firewall restart
 
 ![Ping success](./images/4_1_3_3_PingAfter.png)
 
+### 4) Restrict Management Interface
 
+![LuCI](./images/4_1_3_4_LuCI.png)
+
+Above is a screenshot of the management interface for the OpenWRT router on `http://192.168.56.2:81/` known as `LuCI`. The following commands create a firewall rule to restrict access to the management interface.  
+
+```
+root@OpenWrt:~# uci add firewall rule
+cfg1292bd
+root@OpenWrt:~# uci set firewall.@rule[-1].name='Block-LuCI-Mgmt'
+root@OpenWrt:~# uci set firewall.@rule[-1].src='lan'
+root@OpenWrt:~# uci set firewall.@rule[-1].proto='tcp'
+root@OpenWrt:~# uci set firewall.@rule[-1].dest_port='81'
+root@OpenWrt:~# uci set firewall.@rule[-1].target='REJECT'
+root@OpenWrt:~# uci commit firewall && /etc/init.d/firewall restart
+```
+The result of the effective firewall is the screenshot below. Depicting `refused to connect` when trying to access the management interface. Restricting access to the management interface over the network means a device on the LAN won't be able to access and reconfigure the router. So an attacker on a compromised workstation won't be able to access the routers management interface and change critical configurations such as firewall and routing.
+
+![LuCI Blocked](./images/4_1_3_4_LuCI-Blocked.png)
 
 ## Production Network Design
 
