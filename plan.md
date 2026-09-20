@@ -19,9 +19,9 @@ The plan of tasks for each group member for the remainder of the project is:
 - Week 6: Meet and go through the assignment requirements and notes we have taken. Prepare a plan for future weeks. Assumptions to be completed
 - Week 7: Hans to setup the Network in Open WRT. Graham to complete IP Addressing Requirements 
 - Week 8: Hans to complete Firewall Rules. Graham to complete the Network Diagram
-- Week 9: Harden the WRT system. Capture and Analyse Network Traffic. Allocation TBD
-- Week 10: Risk Assessment.  Allocation TBD
-- Week 11: Reflection, written report and recorded demonstration.  Allocation TBD
+- Week 9: Harden the WRT system. Capture and Analyse Network Traffic. 
+- Week 10: Risk Assessment and security Controls, Written Report and Reflections
+- Week 11: Recorded demonstration. 
 
 ## Schedule - WIP
 
@@ -62,13 +62,14 @@ gantt
     Production Network Diagram - Graham     :active, w8b, after w7b, 7d
 
     section Hardening and Traffic Analysis
-    Harden OpenWRT and analyse traffic      :w9, 2026-09-14, 7d
+    Harden OpenWRT and analyse traffic - Hans      :w9, 2026-09-14, 7d
 
     section Risk Assessment
-    Risk Assessment and Controls            :w10, 2026-09-21, 7d
+    Risk Assessment and Controls- Graham           :w10, 2026-09-21, 7d
+    Written Report - Graham                        :w10, 2026-09-21, 7d
 
-    section Report and Submission
-    Reflection, report, demo, package repo  :crit, w11, 2026-09-28, 5d
+    Section Report and Submission
+    Reflection, Demonstration, package repo  :crit, w11, 2026-09-28, 5d
     Project due 2 Oct, 11.45pm AEST         :milestone, due, 2026-10-02, 0d
 ```
 
