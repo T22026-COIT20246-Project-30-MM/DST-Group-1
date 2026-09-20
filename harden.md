@@ -82,8 +82,6 @@ root@OpenWrt:~# ps | grep uhttpd
 
 ![After - business website on port 80 still working](./images/4_2_1_4_LuCI-After-BusinessSite-OK.png)
 
-Write your answer here — which service, why it wasn't needed, and how disabling it reduces the attack surface.
-
 After review of current settings and features, it was decided that the web GUI management (LuCI) path was the service to be disabled as access to openwrt management can be done through Unified Configuration Interface (uci) via ssh. In a previous network task a firewall rule was created to `REJECT` traffic to the LuCI on port 81. This was accomplished by removing http listening services on port 81 and 444 using `uci delete uhttpd.main.listen_http` and `uci delete uhttpd.main.listen_https` commands in the ssh session and restarting the http service. Disabling this feature altogether reduces the potential attack surfaces for the router by ensuring that there is no live authentication endpoint for targeted credential attacks.
 
 ## Traffic Analysis
