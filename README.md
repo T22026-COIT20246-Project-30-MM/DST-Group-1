@@ -31,7 +31,7 @@ Network Setup
 - [x] Draw OpenWRT/VirtualBox network diagram
 - [x] Setup test web server on OpenWRT
 - [x] Configure firewall rules
-- [ ] Draw production network diagram, assigning IPs
+- [x] Draw production network diagram, assigning IPs
 
 Security Hardening and Traffic Analysis
 - [x] Change default credentials and examine password storage
