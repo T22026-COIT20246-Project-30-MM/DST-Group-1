@@ -37,8 +37,8 @@ Security Hardening and Traffic Analysis
 - [x] Change default credentials and examine password storage
 - [x] Setp SSH key-based authentication
 - [x] Disable unnecessary services
-- [ ] Capture and analyse HTTP traffic
-- [ ] Capture and analyse SSH traffic
+- [x] Capture and analyse HTTP traffic
+- [x] Capture and analyse SSH traffic
 
 Risk Assessment and Controls
 - [x] Conduct mini risk assessment

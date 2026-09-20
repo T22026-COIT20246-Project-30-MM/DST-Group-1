@@ -28,9 +28,9 @@ For this OpenWRT installation the encryption used is `MD5-crypt` denoted by the 
 
 ### 3) SSH Key-Based Authentication
 
-![New RSA key pair generated in MobaKeyGen](./images/4_2_1_3_NewSSHKeyGen.png)
+![New RSA key pair generated in MobaKeyGen](./images/4_2_1_3_NewSSHKey.png)
 
-![Public key copied from MobaKeyGen](./images/4_2_1_3_NewSSHKey.png)
+![Public key copied from MobaKeyGen](./images/4_2_1_3_NewSSHKeyGen.png)
 
 ```
 root@OpenWrt:~# ls -la /etc/dropbear/authorized_keys
@@ -89,23 +89,38 @@ After review of current settings and features, it was decided that the web GUI m
 ### 1) HTTP Traffic Capture and Analysis
 
 ```
-[tcpdump command used to capture HTTP traffic]
+root@OpenWrt:~# tcpdump -i br-mng -w /tmp/http-capture.pcap port 80
+tcpdump: listening on br-mng, link-type EN10MB (Ethernet), capture size 262144 bytes
+^C15 packets captured
+15 packets received by filter
+0 packets dropped by kernel
+root@OpenWrt:~# ls -la /tmp/http-capture.pcap
+-rw-r--r--    1 root     root          4333 Sep 20 06:30 /tmp/http-capture.pcap
 ```
 
-[Screenshot — Wireshark showing the HTTP request/response, filtered on `http`]
+![Wireshark HTTP capture — packet list](./images/4_2_2_1_a-html.png)
+![Wireshark HTTP capture — decoded request/response](./images/4_2_2_1_b-html.png)
 
 Write your answer here — what's visible in plaintext (URL, page content, source/destination IPs), and what that means for an attacker on the same network segment.
+
+Using wireshark we can see that the http packet capture reveals a lot of information in the network traffic. When examining the captured network traffic, we can clearly see elements like the ip addresses of the router `192.168.56.2` and my machine `192.168.56.1` as well as the url and even the html of the web page that shows our student id's and names. An attacker with a packet sniffer on the same network can read all this http traffic in the network traffic.
 
 ### 2) SSH Traffic Capture and Analysis
 
 ```
-[tcpdump command used to capture SSH traffic]
+root@OpenWrt:~# tcpdump -i br-mng -w /tmp/ssh-capture.pcap port 2222
+tcpdump: listening on br-mng, link-type EN10MB (Ethernet), capture size 262144 bytes
+^C117 packets captured
+118 packets received by filter
+0 packets dropped by kernel
 ```
 
-[Screenshot — Wireshark showing the SSH traffic, filtered on `ssh` or `tcp.port==2222`]
+![Wireshark SSH capture — encrypted packet, no readable payload](./images/4_2_2_2_ssh.png)
 
 Write your answer here — contrast with the HTTP capture: payload is encrypted/unreadable, so what capability that denies an attacker.
 
-Include your `.pcap` files in [captures/](./captures/) and link them here once captured, e.g.:
+In contrast to the http traffic inspected earlier, ssh network traffic is not readable. The encrypted packet under the SSH protocol has no plain text information like the http traffic. This is by design as the ssh traffic is encrypted end to end and would-be attackers sniffing network traffic would not be able to find information in the intercepted packets such as user passwords or terminal commands.
+
+The `.pcap` files are included in [captures/](./captures/):
 - [HTTP capture](./captures/http-capture.pcap)
 - [SSH capture](./captures/ssh-capture.pcap)
