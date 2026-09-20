@@ -30,13 +30,13 @@ Network Setup
 - [x] Document OpenWRT/VirtualBox network
 - [x] Draw OpenWRT/VirtualBox network diagram
 - [x] Setup test web server on OpenWRT
-- [ ] Configure firewall rules
+- [x] Configure firewall rules
 - [ ] Draw production network diagram, assigning IPs
 
 Security Hardening and Traffic Analysis
-- [ ] Change default credentials and examine password storage
-- [ ] Setp SSH key-based authentication
-- [ ] Disable unnecessary services
+- [x] Change default credentials and examine password storage
+- [x] Setp SSH key-based authentication
+- [x] Disable unnecessary services
 - [ ] Capture and analyse HTTP traffic
 - [ ] Capture and analyse SSH traffic
 
