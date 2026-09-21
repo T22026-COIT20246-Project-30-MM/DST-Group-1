@@ -8,10 +8,10 @@
 
 The highest ranked risk that was identified was client data tax records. This is highly sensitive due to legal and taxation implications, and exposure to unauthorised access would highly impact the business. 
 
-#Controls#
-1
-2
-3
+**Controls**  
+1  
+2  
+3  
 
 For each control:
 
