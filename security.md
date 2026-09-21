@@ -17,22 +17,15 @@ MFA will reduce the following:
 Threat 1: People Errors  
 Threat 3: Information Extortion  
 Threat 4: Espionage and Trespass 
+  
+
 
 2  
 3  
 
 
-For each control:
 
-How it reduces risk
 
-How to implement it in your network
-
-References to your firewall rules / hardening
-
-Disadvantages
-
-Everything is specific to your OpenWRT, VirtualBox, firewall rules, and staff roles.
 
 **References**
 Microsoft. (n.d.). What is: Multifactor Authentication. Microsoft. https://support.microsoft.com/en-us/security/what-is-multifactor-authentication
