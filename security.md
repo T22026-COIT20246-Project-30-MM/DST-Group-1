@@ -3,12 +3,6 @@
 ## Risk Assessment
 [View risk assessment spreadsheet](./Files/Risk_Assessment.xlsx)
 
-Consider vulnerabilities across at least 8 of the 12 information security threats. 
-  
-Contain assets of each asset type.  
-  
-Include at least 4 different data assets.  
-
 
 ## Security Controls
 
