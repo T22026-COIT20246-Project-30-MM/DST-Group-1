@@ -101,8 +101,6 @@ root@OpenWrt:~# ls -la /tmp/http-capture.pcap
 ![Wireshark HTTP capture — packet list](./images/4_2_2_1_a-html.png)
 ![Wireshark HTTP capture — decoded request/response](./images/4_2_2_1_b-html.png)
 
-Write your answer here — what's visible in plaintext (URL, page content, source/destination IPs), and what that means for an attacker on the same network segment.
-
 Using wireshark we can see that the http packet capture reveals a lot of information in the network traffic. When examining the captured network traffic, we can clearly see elements like the ip addresses of the router `192.168.56.2` and my machine `192.168.56.1` as well as the url and even the html of the web page that shows our student id's and names. An attacker with a packet sniffer on the same network can read all this http traffic in the network traffic.
 
 ### 2) SSH Traffic Capture and Analysis
