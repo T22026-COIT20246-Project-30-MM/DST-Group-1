@@ -27,6 +27,6 @@ Threat 4: Espionage and Trespass
 
 
 
-**References**
-Microsoft. (n.d.). What is: Multifactor Authentication. Microsoft. https://support.microsoft.com/en-us/security/what-is-multifactor-authentication
-Whitman, M., & Mattord, H. (2018). Management of information security. Cengage. https://ebookcentral.proquest.com/lib/cqu/detail.action?docID=5897607# 
+**References**  
+Microsoft. (n.d.). What is: Multifactor Authentication. Microsoft. https://support.microsoft.com/en-us/security/what-is-multifactor-authentication  
+Whitman, M., & Mattord, H. (2018). Management of information security. Cengage. https://ebookcentral.proquest.com/lib/cqu/detail.action?docID=5897607#  
