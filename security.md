@@ -10,6 +10,7 @@ The highest ranked risk that was identified was client data tax records. This is
 
 **Controls**  
 1. MultiFactor Authentication  
+  
 Multifactor Authentication (MFA) makes it harder for attacks to occur due to the authentication required to access the data. Whitman & Mattord (2018) states that identification through authentication is imperative to keeping data secure. MFA works by using an additional method of identification, usually an app, that requires the user to access and accept the sign-in being legitimate (Microsoft n.d).
 
 MFA will reduce the following:  
