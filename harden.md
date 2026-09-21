@@ -117,8 +117,6 @@ tcpdump: listening on br-mng, link-type EN10MB (Ethernet), capture size 262144 b
 
 ![Wireshark SSH capture — encrypted packet, no readable payload](./images/4_2_2_2_ssh.png)
 
-Write your answer here — contrast with the HTTP capture: payload is encrypted/unreadable, so what capability that denies an attacker.
-
 In contrast to the http traffic inspected earlier, ssh network traffic is not readable. The encrypted packet under the SSH protocol has no plain text information like the http traffic. This is by design as the ssh traffic is encrypted end to end and would-be attackers sniffing network traffic would not be able to find information in the intercepted packets such as user passwords or terminal commands.
 
 The `.pcap` files are included in [captures/](./captures/):
