@@ -6,11 +6,21 @@
 
 ## Security Controls
 
-1. Explain how the control reduces the risk of the selected data asset.
-  
-3. Give specific details of how the control can be implemented in the scenario (e.g., referring todevices, data, users, and your network configuration)
-  
-4. Reference specific parts of your network setup or hardening where relevant (e.g., a firewall rule youalready configured, or an additional change that would be needed).
-  
-5. Discuss any disadvantages of introducing the control from the perspective of the business or itsusers.
-  
+The highest ranked risk that was identified was client data tax records. This is highly sensitive due to legal and taxation implications, and exposure to unauthorised access would highly impact the business. 
+
+#Controls#
+1
+2
+3
+
+For each control:
+
+How it reduces risk
+
+How to implement it in your network
+
+References to your firewall rules / hardening
+
+Disadvantages
+
+Everything is specific to your OpenWRT, VirtualBox, firewall rules, and staff roles.
