@@ -21,8 +21,8 @@ Threat 4: Espionage and Trespass
 2. Encryption
 Encryption will be able to protect our client's tax records by making the data unreadable to attackers without the encryption key (Stouffer, 2023). Encryption is particularly important for this type of data due to the sensitive nature and the high impact to the business if the data is not correctly protected.
 
-Encryption will reduce the following:
-Threat 3: Information Extortion  
+Encryption will reduce the following:  
+Threat 3: Information Extortion    
 Threat 4: Espionage and Trespass 
    
 3. Role-Based Access Control (RBAC)  
