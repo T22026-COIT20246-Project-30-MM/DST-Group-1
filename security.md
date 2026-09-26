@@ -18,15 +18,20 @@ Threat 1: People Errors
 Threat 3: Information Extortion  
 Threat 4: Espionage and Trespass 
   
+2. Encryption
+Encryption will be able to protect our client's tax records by making the data unreadable to attackers without the encryption key (Stouffer, 2023). Encryption is particularly important for this type of data due to the sensitive nature and the high impact to the business if the data is not correctly protected.
 
-
-2  
-3  
-
+Encryption will reduce the following:
+Threat 3: Information Extortion  
+Threat 4: Espionage and Trespass 
+   
+3. Role-Based Access Control (RBAC)  
+RBAC should be implemented to ensure that only employees who require access to the information has the required permissions. If an employee does not require access to the information than they do not require the appropriate privileges to view or modify them. 
 
 
 
 
 **References**  
 Microsoft. (n.d.). What is: Multifactor Authentication. Microsoft. https://support.microsoft.com/en-us/security/what-is-multifactor-authentication  
+Stouffer, C. (2023). What is encryption? How it works + types of encryption. Norton. https://us.norton.com/blog/privacy/what-is-encryption  
 Whitman, M., & Mattord, H. (2018). Management of information security. Cengage. https://ebookcentral.proquest.com/lib/cqu/detail.action?docID=5897607#  
