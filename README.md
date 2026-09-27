@@ -42,19 +42,19 @@ Security Hardening and Traffic Analysis
 
 Risk Assessment and Controls
 - [x] Conduct mini risk assessment
-- [ ] Recommend security controls
-- [ ] Explain controls
+- [x] Recommend security controls
+- [x] Explain controls
 
 Project Reflection
-- [ ] Include commits screenshot
-- [ ] Document task split and compare with commits
-- [ ] Reflect on teamwork
+- [x] Include commits screenshot
+- [x] Document task split and compare with commits
+- [x] Reflect on teamwork
 
 Report and Files
-- [ ] Report written on GitHub in the template .md files
-- [ ] Screenshots included in [images/](./images/) directory and linked to from report
-- [ ] Packet captures included in [captures/](./captures/) directory and linked to from report
-- [ ] Risk assessment spreadsheet included as [Risk assessment spreadsheet](./risk-assessment-template-project-final.xlsx)
+- [x] Report written on GitHub in the template .md files
+- [x] Screenshots included in [images/](./images/) directory and linked to from report
+- [x] Packet captures included in [captures/](./captures/) directory and linked to from report
+- [x] Risk assessment spreadsheet included as [Risk assessment spreadsheet](./risk-assessment-template-project-final.xlsx)
 - [ ] Video created showing required demonstrations
 
 Submission
