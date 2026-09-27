@@ -1,13 +1,12 @@
 # Project Reflection
 
-## GitHub Commits
+## GitHub Commits  
+![Commits Screenshot](./images/total_Commits.png)  
+  
 ![Commits Screenshot](./images/Graham_Commits.png)  
   
 ![Commits Screenshot](./images/Hans_Commits.png)  
   
-![Commits Screenshot](./images/total_Commits.png)  
-  
-
 ## List of Tasks
 For each student in the group, state what parts they contributed to. For example "Steven did 50% of the Network Design, 90% of the security assessment and reviewed the ethical and social issues.". Using a table is recommended, but not required.
 
