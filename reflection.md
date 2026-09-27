@@ -1,7 +1,7 @@
 # Project Reflection
 
 ## GitHub Commits
-![Commits Screenshot](./images/Grahams_Commits.png)  
+![Commits Screenshot](./images/Graham_Commits.png)  
   
 ![Commits Screenshot](./images/Hans_Commits.png)  
   
