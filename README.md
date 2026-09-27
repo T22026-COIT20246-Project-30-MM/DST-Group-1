@@ -13,6 +13,7 @@
 - [Hardening and Traffic Analysis](./harden.md)
 - [Risk Assessment and Security Controls](./security.md)
 - [Project Reflections](./reflection.md)
+- [AI Assistance Declaration](./ai-assistance-log.md)
 
 ## Project Checklist
 

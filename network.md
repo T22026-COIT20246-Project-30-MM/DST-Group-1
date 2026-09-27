@@ -17,6 +17,8 @@
 
 OpenWRT has two network interfaces in this VM, eth0 and eth1, each mapped to a different VirtualBox adapter. eth0 is connected to Adapter 1 (Host-only Adapter) and acts as the port for the br-mng (management) interface, and it shares the same MAC address as br-mng (08:00:27:e3:5f:8f), confirming the match. br-mng is statically assigned 192.168.56.2. eth1 is connected to Adapter 2 (NAT), with MAC address 08:00:27:6f:f5:f5, and is dynamically assigned 10.0.3.15/24 from VirtualBox's NAT engine and simulates OpenWRT's WAN port. The Windows host itself sits at 192.168.56.1, the first address in the same 192.168.56.0/24 network as br-mng. Because the host and br-mng are on the same subnet, they do not need NAT or routing to communicate. They reach each other directly at Layer 2, confirmed by successfully pinging 192.168.56.1 from within the OpenWRT router. This host-to-OpenWRT path is what SSH, browsing the web pages hosted on the router, and Wireshark (used to inspect the HTTP, ICMP, and SSH traffic between the two) all rely on.
 
+*AI assistance was used in preparing this section — see [ai-assistance-log.md](./ai-assistance-log.md#0-network-setup-explaining-the-host-to-openwrt-connection-412) for the full disclosure, including an earlier draft issue that was caught and corrected.*
+
 ### Below is the Lab Network Diagram
 
 ![NetworkDiagram Screenshot](./images/4_1_2_2_LabNetworkDiagram.drawio.png)

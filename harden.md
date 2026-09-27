@@ -28,6 +28,8 @@ For this OpenWRT installation the encryption used is `MD5-crypt` denoted by the 
 
 ### 3) SSH Key-Based Authentication
 
+*AI assistance used throughout the following sections for command guidance and accuracy review — see [ai-assistance-log.md](./ai-assistance-log.md) for the full disclosure.*
+
 ![New RSA key pair generated in MobaKeyGen](./images/4_2_1_3_NewSSHKey.png)
 
 ![Public key copied from MobaKeyGen](./images/4_2_1_3_NewSSHKeyGen.png)
