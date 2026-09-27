@@ -2,6 +2,8 @@
 
 ## Harden the OpenWRT System
 
+*AI assistance used throughout the following sections for command guidance and accuracy review — see [ai-assistance-log.md](./ai-assistance-log.md) for the full disclosure.*
+
 ### 1) Change Default Root Password
 
 ![Before password change](./images/4_2_1_BeforePasswordChange.png)
@@ -27,8 +29,6 @@ Changing the default/known root password is best practice when securing a device
 For this OpenWRT installation the encryption used is `MD5-crypt` denoted by the `$1$` in the beginning of the password. For the change in password this encryption remained the same for the new password i.e `$1$`. The encryption is followed by the `salt` and `$`. The salt is a random string that is combined with the password before it gets hashed. In this scenario the original salt has changed from `3a5XsGay` to `MFXFhas9` for the new password. Changing the `salt` means users with the same password return different hash values of their password. Finally the password is represented as a hash value and not plain text. Hashing is a one way operation and a would be attacker would not be able to decrypt or reverse this operation to get the password.
 
 ### 3) SSH Key-Based Authentication
-
-*AI assistance used throughout the following sections for command guidance and accuracy review — see [ai-assistance-log.md](./ai-assistance-log.md) for the full disclosure.*
 
 ![New RSA key pair generated in MobaKeyGen](./images/4_2_1_3_NewSSHKey.png)
 
