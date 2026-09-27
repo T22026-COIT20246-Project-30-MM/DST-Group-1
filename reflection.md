@@ -8,7 +8,15 @@
 ![Commits Screenshot](./images/Hans_Commits.png)  
   
 ## List of Tasks
-For each student in the group, state what parts they contributed to. For example "Steven did 50% of the Network Design, 90% of the security assessment and reviewed the ethical and social issues.". Using a table is recommended, but not required.
+  
+Harden - Hans did 100%  
+Network - Hans did 80%, Graham did 20%  
+Plan - Hans 50%, Graham 50%  
+Risk Assessment - Graham did 80%, Hans did 20%  
+Security controls - Graham did 100%  
+Reflection - Graham did 50%, Hans did 50%  
+Presentation - Graham did 50%, Hans did 50%  
+
 
 ## Reflection on Commits and Tasks
 Reflect on GitHub commits, tasks performed and which weeks commits were made. See Project Specification for detailed requirements. 
