@@ -24,7 +24,12 @@ Presentation - Graham did 50%, Hans did 50%
 
 On the commit history itself: the earliest few commits (under the `PASsword71` account) are the unit coordinator's, not a third group member. Dr Mohammad provided the initial project structure, including the folders, the template Markdown files, and the risk assessment spreadsheet, before either of us started committing our own work.
 
-Commits happened across six consecutive weeks, with both Graham and I committing every week. Given the division of work set out in `plan.md`, I think this pace was sufficient. I understood what I needed to complete and commit by the end of each week for the project to stay on schedule. My own commits are heaviest around Weeks 7–9, which lines up with when I was working on the lab network setup and firewall rules, and the commit graph for that period confirms it.
+Commits happened across six consecutive weeks, with both Graham and I committing every week. Given the division of work set out in `plan.md`, I think this pace was sufficient. I understood what I needed to complete and commit by the end of each week for the project to stay on schedule. My own commits are heaviest around Weeks 7–9, which lines up with when I was working on the lab network setup and firewall rules, and the commit graph for that period confirms it.  
+
+**Graham:** Early on in the project, Hans and I met to work out a plan on the contributions required from each of us. We had a solid plan for the rest of the term to ensure the work was met. While tasks were split evenly, I had wondered if perhaps Hans was disadvantaged with the work required for the Harden requirements. So, I was expecting the number of commits from Hans to be larger. However, I would do light touch points during the week, so this could explain why I ended up with a higher value.  And the bulk of my commits mostly occurred on the weekends, whereas Hans were spread out more through the week. I wasn’t surprised with how my commits tending to be favoured on the weekends, as my limited availability during the week meant I did most of my project work on the weekend.  
+  
+I think based on how we distributed the work, our different work styles, and how we each had our own external commitments,  I am not concerned with the number of commits either of contributed to the end result. 
+
 
 ## Reflection on Group Work
 
