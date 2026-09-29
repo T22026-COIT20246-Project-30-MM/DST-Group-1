@@ -41,4 +41,11 @@ That same review turned up a more specific problem worth describing on its own: 
 
 Based on that experience, I'd recommend that group members track the resources they use to complete their assigned tasks as they go, whether that's lecture notes, websites, or AI, rather than reconstructing it after the fact. Noting sources at the point of use, directly in the write-up for that section, would have avoided the scramble to reconstruct an AI-use history a few weeks later.
 
-On task allocation: I think the division of work recorded in the project plan gave us clear, non-overlapping ownership of tasks from early on, and I wouldn't change how that was split.
+On task allocation: I think the division of work recorded in the project plan gave us clear, non-overlapping ownership of tasks from early on, and I wouldn't change how that was split.  
+
+**Graham:** As I mentioned above, we started the project by setting clear expectations on when and how we would meet. We would meet each Friday over Google Meets to discuss what we’re working on. In the first meeting we devised a plan on the rest of the semester, with task responsibilities and deadlines.  
+  
+Like any group, a challenge we faced was external commitments limiting our ability to meet at the agreed time. But a technique that we employed was fostering a flexible approach to work for when these commitments arose. This allowed us to be able to accommodate each other’s requirements to be flexible with the meeting times. Having the ability to email throughout the week also took pressure off, so by the time we met for our scheduled appointment, we were both confident in our expectations, but also able to pivot if needed.  
+  
+We did have to pivot later in the project, when we discovered that some of the security analysis, might have been dependant on Hans’s work with the firewalls. But this just meant we altered the plan to accommodate this unexpected challenge. I think in hindsight, based on the output of Hans’ work with the Hardening, Hans did do a lot more work than I was anticipating. I think in the planning stages, I was purely looking at a task-based approach, rather than looking at what was involved. So, if I had to do it again, I would spend more time analysing what was required of the task, and shoulder more of the work in that section. 
+
