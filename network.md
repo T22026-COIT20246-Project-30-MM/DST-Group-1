@@ -231,6 +231,6 @@ The result of the effective firewall is the screenshot below. Depicting `refused
 
 ## Production Network Design
 
-GR - The network design is a WIP - Pending feedback and discuss with Hans
+
 
 ![NetworkDiagram Screenshot](./images/NetworkDiagram.png)
