@@ -23,7 +23,7 @@ The plan of tasks for each group member for the remainder of the project is:
 - Week 10: Risk Assessment and security Controls, Written Report and Reflections
 - Week 11: Recorded demonstration. 
 
-## Schedule - WIP
+## Schedule - Gantt Chart
 
 
 ```mermaid
