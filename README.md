@@ -59,7 +59,7 @@ Report and Files
 - [ ] Video created showing required demonstrations
 
 Submission
-- [ ] PDF of all .md files created
+- [x] PDF of all .md files created
 - [ ] ZIP of GitHub repo created
 - [ ] MP4 of video created
 - [ ] PDF and ZIP submitted as attachments in Moodle
